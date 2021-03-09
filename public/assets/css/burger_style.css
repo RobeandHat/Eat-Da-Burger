@@ -1,3 +1,53 @@
-.hidden {
-  display: none;
+body {
+  background-color: #ffcc80;
+}
+
+.container {
+  margin-top: 5%;
+}
+
+.cards {
+  background-color: #ffffcc;
+  border-radius: 15px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  padding: 10px;
+}
+
+.bottom {
+  margin-top: 20px;
+}
+
+ol {
+  list-style: none;
+  padding-left: 10px;
+  text-align: center;
+}
+
+li {
+  font-weight: bold;
+  margin-top: 5px;
+  background-color: #ffcc80;
+}
+
+.header {
+  margin-bottom: 50px;
+  color: red;
+  font-weight: bold;
+  font-family: "Brush Script MT", cursive;
+  font-size: 100px;
+}
+
+.change-burger {
+  font-weight: bold;
+}
+
+img {
+  margin-top: 20%;
+  margin-bottom: 20%;
+}
+
+.addBurger {
+  margin-top: 5px;
+  font-weight: bold;
 }

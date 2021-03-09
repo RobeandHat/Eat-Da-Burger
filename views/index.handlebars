@@ -1,32 +1,48 @@
-<h1>EAT-DA-BURGER</h1>
-
-<h2>Burger Menu</h2>
-
-<ul>
-    {{#each burgers}}
-    {{#unless devoured}}
-    {{> burger/burger-block devoured=false}}
-    {{/unless}}
-    {{/each}}
-</ul>
-
-<h2>Devoured burgers!</h2>
-
-<ul>
-    {{#each burgers}}
-    {{#if devoured}}
-    {{> burger/burger-block devoured=true}}
-    {{/if}}
-    {{/each}}
-</ul>
-
-<h2>Add a burger to devour!</h2>
-<form id="create-form">
-
-    <div class="form-group">
-        <label for="ca">Burger Name:</label>
-        <input type="text" id="ca" name="name">
+<div class="container">
+    <div class="row">
+        <div class="text-center spacing">
+            <h1 class="header">Eat-Da-Burger!</h1>
+        </div>
     </div>
+    <div class="row">
+        <div class="col-md cards">
+            <h2 style="text-align: center;"><u>BURGER MENU</u></h2>
 
-    <button type="submit">Add Burger</button>
-</form>
+            <ol>
+                {{#each burgers}}
+                {{#unless devoured}}
+                {{> burger/burger-block devoured=false}}
+                {{/unless}}
+                {{/each}}
+            </ol>
+        </div>
+        <div class="col-md text-center">
+            <img src="/assets/img/burger.png" alt="Delicious Burger" style="width:200px;height:200px;">
+        </div>
+        <div class="col-md cards">
+            <h2 style="text-align: center;"><u>DEVOURED!</u></h2>
+
+            <ol>
+                {{#each burgers}}
+                {{#if devoured}}
+                {{> burger/burger-block devoured=true}}
+                {{/if}}
+                {{/each}}
+            </ol>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-4"></div>
+        <div class="col-md-4 text-center">
+            <h2 style="text-align: center;" class="bottom cards">Add a burger to the menu!</h2>
+            <div class="form-group">
+                <form id="create-form">
+                    <label for="ca"></label>
+                    <input type="text" class="form-control" id="ca" name="name" placeholder="Enter a burger name...">
+                    <button type="submit" class="btn btn-warning btn-outline-dark addBurger">Add Burger!</button>
+                </form>
+            </div>
+        </div>
+        <div class="col-md-4"></div>
+    </div>
+</div>
