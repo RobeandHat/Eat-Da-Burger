@@ -50,7 +50,7 @@ Email: mttnrdlph@gmail.com
 
 ## Functionality
 
-[Link to heroku application!](https://drive.google.com/file/d/1Ld2TwEcyNBBSN3LWnun9RNSGrtFscq7G/view)
+[Link to heroku application!](https://eat-da-burger222.herokuapp.com/)
 
 ## Licensing
 
